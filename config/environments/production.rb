@@ -87,7 +87,6 @@ Rails.application.configure do
   # Required for devise gem
   # For heroku will need host name
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
-end
 
 #environment variables for amazon s3
 config.paperclip_defaults = {
@@ -98,3 +97,5 @@ config.paperclip_defaults = {
     :secret_access_key => ENV['AWS_SECRET_ACCESS_KEY']
   }
 }
+
+end
